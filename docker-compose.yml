@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  game:
+    container_name: game
+    networks:
+      - game
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/code
+    entrypoint: bash
+    working_dir: /code
+    command: ['-c', '/usr/local/bin/composer dump-autoload && php run.php']
+
+networks:
+  game:
+    driver: bridge
