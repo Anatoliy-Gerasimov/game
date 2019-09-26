@@ -27,7 +27,7 @@ class Game
      * Game constructor.
      *
      * @param iPlayerManager $playerManager class(implemented iPlayerManager interface) which store players and mange the turn
-     * @param iLogger|null $logger class(implemented iLogger interface) for output information
+     * @param iLogger|null   $logger class(implemented iLogger interface) for output information
      *
      * @throws \Exception
      */
